@@ -14,7 +14,7 @@
         <div class="flex flex-wrap">
             <div class="w-full self-center px-4 lg:w-1/2">
                 <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Hi There! 👋🏻 <span
-                        class="block font-bold text-4xl lg:text-5xl mt-1 text-secondary">I'm Kristoff </span></h1>
+                        class="block font-bold text-4xl lg:text-5xl mt-1 text-secondary" id="name"></span></h1>
                 <h2 class="font-medium text-secondary text-md mb-5">Computer Science Student &
                     <span class=" text-primary font-semibold">Web Developer</span>
                 </h2>
@@ -41,6 +41,15 @@
         </div>
     </div>
 </section>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed('#name', {
+        strings: ["I'm Kristoff", "I'm Chrystalio"],
+        typeSpeed: 80,
+        backSpeed: 70,
+        loop: true,
+        showCursor: false,
+    });
+</script>
 </body>
 </html>
