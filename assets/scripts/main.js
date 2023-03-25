@@ -1,4 +1,5 @@
 const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('#nav-menu');
 
 // Navbar fixed
 window.onscroll = () => {
@@ -16,4 +17,5 @@ window.onscroll = () => {
 // Hamburger
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger-active');
+    navMenu.classList.toggle('hidden');
 });
