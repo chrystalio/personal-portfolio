@@ -678,21 +678,16 @@ video {
   width: 100%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
-}
-
 .max-w-\[120px\] {
   max-width: 120px;
 }
 
-.max-w-\[190px\] {
-  max-width: 190px;
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
+.max-w-\[180px\] {
+  max-width: 180px;
 }
 
 .max-w-\[250px\] {
@@ -705,26 +700,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[220px\] {
-  max-width: 220px;
-}
-
-.max-w-\[20px\] {
-  max-width: 20px;
-}
-
-.max-w-\[150px\] {
-  max-width: 150px;
-}
-
-.max-w-\[800px\] {
-  max-width: 800px;
-}
-
-.max-w-\[180px\] {
-  max-width: 180px;
 }
 
 .origin-bottom-left {
@@ -818,11 +793,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -850,11 +820,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-5 {
@@ -1000,7 +965,22 @@ video {
 }
 
 html {
+  overflow: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 
 body {
@@ -1027,16 +1007,16 @@ body {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.hamburger-active > span:nth-child(1) {
+.hamburger-active>span:nth-child(1) {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hamburger-active > span:nth-child(2) {
+.hamburger-active>span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-active > span:nth-child(3) {
+.hamburger-active>span:nth-child(3) {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1151,10 +1131,6 @@ body {
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:w-auto {
-    width: auto;
   }
 
   .lg\:max-w-full {
