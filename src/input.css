@@ -3,11 +3,22 @@
 @tailwind utilities;
 
 html {
+    overflow: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
 
 body {
     font-family: 'Inter', sans-serif;
+    
 }
 
 .navbar-fixed {
@@ -20,14 +31,14 @@ body {
     @apply w-[30px] h-[2px] my-2 block bg-slate-900;
 }
 
-.hamburger-active > span:nth-child(1) {
+.hamburger-active>span:nth-child(1) {
     @apply rotate-45;
 }
 
-.hamburger-active > span:nth-child(2) {
+.hamburger-active>span:nth-child(2) {
     @apply opacity-0;
 }
 
-.hamburger-active > span:nth-child(3) {
+.hamburger-active>span:nth-child(3) {
     @apply -rotate-45;
 }
