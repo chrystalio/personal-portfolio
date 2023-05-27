@@ -11,7 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/ico/favicon-16x16.png">
     <link rel="manifest" href="assets/images/ico/site.webmanifest">
     <title>Kristoff | Human caffeine-fueled robot</title>
+    <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body class="bg-[#F9F9F9]">
@@ -354,7 +356,7 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
     <script>
         var typed = new Typed('#name', {
             strings: ["I'm Kristoff", "I'm Chrystalio"],
