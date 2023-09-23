@@ -551,10 +551,6 @@ video {
   }
 }
 
-.static {
-  position: static;
-}
-
 .absolute {
   position: absolute;
 }
@@ -897,10 +893,6 @@ video {
 
 .pb-32 {
   padding-bottom: 8rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pt-32 {
