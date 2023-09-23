@@ -1,6 +1,8 @@
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
 
+AOS.init();
+
 // Navbar fixed
 window.onscroll = () => {
     const header = document.querySelector('header');
