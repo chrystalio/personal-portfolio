@@ -1168,6 +1168,11 @@ body {
   --tw-ring-color: rgb(246 107 14 / var(--tw-ring-opacity));
 }
 
+.active\:text-primary:active {
+  --tw-text-opacity: 1;
+  color: rgb(246 107 14 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(246 107 14 / var(--tw-text-opacity));
